@@ -1,0 +1,12 @@
+/* Description: Implement the attached email signature design
+ with code to work as a responsive email signature and
+clickable where necessary in any emailing platform example gmail, outlook, webmail...
+Fonts Exo 2 Bold Exo 2 Regular
+Orange F37E53
+Blue 6E90CA
+*/
+/* SocialMedia links:
+https://www.instagram.com/kuelap.africa/
+https://www.linkedin.com/company/kuelap-africa/
+https://kuelap.africa/
+*/

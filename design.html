@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content=
+        "width=device-width, initial-scale=1" />
+    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="design.css">
+    <script>
+        // function to set a given theme/color-scheme
+        function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+        }
+
+        // function to toggle between light and dark theme
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
+        }
+
+        // Immediately invoked function to set the theme on initial load
+        (function () {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-dark');
+            } else {
+                setTheme('theme-light');
+            }
+        })();
+    </script>
+    <body>
+        <div 
+        <section id="article">
+            <div class="main">
+                <div class="main-img">
+                    <img src="Kuelap_Ayuk-Etta-Image.svg" />
+                </div>
+
+            </div>
+            <div class="main">
+                <div class="sub-img">
+                    <img src="Kuelap_arrow.svg" />
+                </div>
+
+            </div>
+            <div class="main">
+                <div class="content">
+                    <h1 id="color">Etta Ayuk <br> CEO Kuelap Africa</h1>
+                    <h3 id="color"></h3>
+                    <ul>
+                        <li class="list"><a href="tel:+237691376601">T:(+237)691376601</a></li>
+                        <li class="list"><a href="https://wa.me/<number>" target="_blank">W:+237691376601</a></li>
+                        <li class="list"><a href="mailto:isaac.belombo@kuelap.africa">Email:Isaac.belombo@kuelap.africa</a></li>
+                        <li class="list"><a href="https://www.kuelap.africa/">Kuelap Africa | Yaounde,Cameroon</a></li>
+
+                        <a href="https://m.facebook.com/kuelap.africa" class="fa fa-facebook"></a>
+                        <a href="https://twitter.com/Kuelap_Africa" class="fa fa-twitter"></a>
+                        <a href="https://www.instagram.com/kuelap.africa/" class="fa fa-instagram"></a>
+                        <a href="https://www.linkedin.com/company/kuelap-africa/" class="fa fa-linkedin"></a>
+                    </ul>
+                </div>   
+
+            </div>
+        </div>
+        </section>
+        <div id="Logo">
+            <div class="logo-main">
+                <img src="Kuelap_logo_horizontal.svg" />
+            </div>
+            <div class="logo-main">
+                <p>Transforming Digital <br> Financial Services </p>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Theme Switcher</h1>
+            <button id="switch" onclick="toggleTheme()">Switch</button>
+        </div>
+        
+    
+        
+        
+        
+        
+
+    </body>
+</html>
+
